@@ -18,10 +18,9 @@ $food = new Food('potato', 250);
 
 print_r($food);
 
-echo $food->show_price(250);
-?>
+echo '<br>'; 
 
-<?php
+
 class Animal{
   private $name;
   private $height;
@@ -43,7 +42,9 @@ public function show_height() {
 $animal = new Animal('dog', 60, 5000);
 
 print_r($animal);
+echo '<br>';
 
-echo $animal->show_height(60);
+$food->show_price();
+$animal->show_height();
 
 ?>
